@@ -1,5 +1,7 @@
 # NestJS 核心原理教学项目
 
+vibe coding by Claude Code 
+
 通过实现一个简化版的 NestJS 框架（Mini-Nest），深入理解 NestJS 的核心原理。
 
 ## 项目结构

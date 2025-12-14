@@ -1,0 +1,28 @@
+{
+  "name": "mini-nest-tutorial",
+  "version": "1.0.0",
+  "description": "NestJS 核心原理教学项目 - 通过实现简化版 NestJS 来深入理解框架原理",
+  "author": "NestJS Tutorial",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -b",
+    "start:basic": "NODE_OPTIONS='--no-experimental-strip-types' npx ts-node 01-basic/src/demo-app/main.ts",
+    "start:full": "NODE_OPTIONS='--no-experimental-strip-types' npx ts-node 02-full/src/demo-app/main.ts",
+    "test:basic": "NODE_OPTIONS='--no-experimental-strip-types' TS_NODE_PROJECT=./tsconfig.json mocha --require ts-node/register '01-basic/test/**/*.spec.ts'",
+    "test:full": "NODE_OPTIONS='--no-experimental-strip-types' TS_NODE_PROJECT=./tsconfig.json mocha --require ts-node/register '02-full/test/**/*.spec.ts'",
+    "test": "npm run test:basic && npm run test:full"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.2.0",
+    "rxjs": "^7.8.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^20.0.0",
+    "chai": "^4.3.0",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
